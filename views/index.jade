@@ -1,5 +1,7 @@
-extends layout
+extends base
 
-block content
-  h1= title
-  p Welcome to #{title}
+block vars
+	-var title = 'Timesheet' 
+	p.
+		welcome to Timesheet App. this is the homepage. please <a href="/register">register</a>
+		or <a href="/login">login</a> to continue
