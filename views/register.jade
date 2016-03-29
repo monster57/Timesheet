@@ -1,0 +1,21 @@
+extends base
+
+block vars
+	- var title='Timesheet'
+
+block body
+	h1 create an account
+	form(method='post')
+		span Name:
+		input(type='text', name='name', required="true")
+		br
+
+		span Email:
+		input(type='text', name='email', required="true")
+		br
+
+		span Password:
+		input(type='text', name='password', required="true")
+		br
+
+		input(type='submit')
