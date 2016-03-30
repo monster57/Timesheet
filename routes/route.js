@@ -6,6 +6,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', userController.home);
 router.get('/register', userController.getRegisterPage);
+router.get('/login', userController.getLoginPage);
 
 
 module.exports = router;
