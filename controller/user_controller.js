@@ -4,7 +4,7 @@ userController.home = function(req, res, next){
 	res.render('index')
 }
 
-userController.registerUser = function(req, res, next){
+userController.getRegisterPage = function(req, res, next){
 	res.render('register');
 }
 

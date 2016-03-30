@@ -5,7 +5,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', userController.home);
-router.get('/register', userController.registerUser)
+router.get('/register', userController.getRegisterPage);
+
 
 
 module.exports = router;
