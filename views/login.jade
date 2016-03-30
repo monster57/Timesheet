@@ -1,0 +1,21 @@
+extends base
+
+block vars
+	- var title='Timesheet'
+
+block body
+	h1 login to your account
+
+	if error
+		p Error: #{error}
+
+		form(method="post")
+			span Email:
+			input(type="email", name="email", required="true")
+			br
+
+			span Password:
+			input(type="email", name="password", required="true")
+			br
+
+			input(type="submit");
